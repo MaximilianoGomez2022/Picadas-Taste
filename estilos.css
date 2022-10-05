@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: relative;
+    background-color: #212529;
+    height: 80px;
+}
+
+header, body, footer {
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav button {
+    margin-top: 10px;
+}
+
+#logo {
+    background-image: url(img/logo_Mesa\ de\ trabajo\ 1.png);
+    width: 226px;
+    height: 78px;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    position: absolute;
+    z-index: 1000;
+    left: 40px;
+}
+
+#carrito img {
+
+    display: inline-block;
+}
+
+.borde {
+    border: 1px solid rgb(39, 74, 149);
+}
+
+.borde-rojo {
+    border: 4px solid rgb(182, 66, 66);
+}
+
+.borde-verde {
+    border: 3px solid rgb(36, 36, 36);
+    padding: 20px;
+    max-width: 21rem;
+}
+
+#carrito2 {
+    text-align: center;
+}
+
+.agregar {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    height: 40px;
+    width: 45%;
+    border-radius: 82px 82px 82px 82px;
+    -webkit-border-radius: 82px 82px 82px 82px;
+    -moz-border-radius: 82px 82px 82px 82px;
+    margin-bottom: 20px;
+}
+
+#restante {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    height: 60px;
+    width: 35%;
+    border-radius: 82px 82px 82px 82px;
+    -webkit-border-radius: 82px 82px 82px 82px;
+    -moz-border-radius: 82px 82px 82px 82px;
+    padding: 20px;
+    margin: auto;
+}
+
+#restante p{
+    margin: -8px;
+    font-size: 1.4rem;
+}
+.agregar:hover {
+    background-color: rgb(42, 42, 42);
+}
+
+.quitar {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    height: 40px;
+    width: 45%;
+    border-radius: 82px 82px 82px 82px;
+    -webkit-border-radius: 82px 82px 82px 82px;
+    -moz-border-radius: 82px 82px 82px 82px;
+    margin-bottom: 20px;
+}
+
+#filtrosDiv {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.filtros {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    height: 40px;
+    width: 20% !important;
+    border-radius: 82px 82px 82px 82px;
+    -webkit-border-radius: 82px 82px 82px 82px;
+    -moz-border-radius: 82px 82px 82px 82px;
+    margin: 25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#carrito {
+    width: 95%;
+    margin-top: 25px;
+}
+
+.modal1 {
+    background:rgb(182, 66, 66);
+    color: white;
+    height: 40px;
+    width: 100%;
+    float: right;
+    padding-left: 20px;
+    margin-top: -10000px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.big {
+    border: 2px solid salmon;
+    background-color: rgb(0,0,0,0.95);
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    overflow: auto;
+    z-index: 5000;
+    padding-bottom: 20px;
+}
+
+.oferta {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 1400px;
+    height: calc(100% + -80px);
+    position: fixed;
+    top: 80px;
+    text-align: center;
+    overflow: auto;
+}
+
+.checkout {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1400px;
+    height: calc(100% + -80px);
+    position: fixed;
+    top: 80px;
+    text-align: center;
+    overflow: auto;
+}
+
+.ulDetalle {
+    background-color: rgb(19, 19, 19);
+    padding: 20px;
+}
+
+.ulDetalle li {
+    list-style: none;
+    text-align: left;
+    background-color: #212529;
+    color: white;
+    padding: 25px;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.ulDetalle img {
+    position: absolute;
+    right: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 6px;
+}
+
+.checkout button {
+    width: 30%;
+    margin: 10px 25px;
+}
+
+.imgChica {
+    width: 75px;
+}
+
+#divTotal {
+    background-color: rgb(19, 19, 19) ;
+    color: white;
+}
+
+footer {
+    background-color:rgb(19, 19, 19) ;
+    padding: 35px;
+    color: white;
+}
+
+.divBotones {
+    text-align: center;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto p, h3 {
+    text-align: left;
+}
+
+
+
+.divBotones button {
+    margin: 5px;
+}
+
+.quitar {
+    background-color: rgb(252, 252, 252) !important;
+    border: 2px solid black;
+    color: black !important;
+}
+
+.divTexto {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+figure {   
+    margin: 95px 0 0rem;
+}
+
+#imgcarrito {
+    display: inline-block;
+    position: absolute;
+    z-index: 100000;
+    top:20px;
+    left: 72%;
+}
+
+#imgcarrito p {
+    background-color: rgb(176, 27, 27);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    padding: 3px 10px;
+    border-radius: 50% 50%;
+}
+
+#barra {
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+#banner {
+    margin-top: -15px;
+    position: relative;
+}
+
+#texto-banner {
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 45px;
+    width: 55%;
+}
+
+#texto-banner h2 {
+    font-size: 5rem;
+}
+
+#texto-banner p {
+    font-size: 2rem;
+}
+
+form {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+form > div {
+    width: 40%;
+    margin: 20px;
+    display: inline-block;
+    padding: 0;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+}
+
+form select {
+    width: 80%;
+    margin: 20px;
+}
+
+form button {
+    width: 30% !important;
+    margin: 20px;
+}
+
+#importe {
+    text-align: center !important;
+}
+
+#importe h3 {
+    text-align: center !important;
+}
+
+#importe p:last-child {
+    font-size: 2rem;
+}
+
+#verCarrito {
+    width: 100% !important;
+    margin: 25px 0;
+}
+
+.pError {
+    color:red;
+    margin: 0 ;
+    position: absolute;
+}
+
+.oferta img {
+    margin-top: -60px !important;
+}
+
+.navbar-toggler {
+    margin-top: 22px;
+}
+
+@media screen and (max-width:1115px) {
+    #imgcarrito {
+        left:67%;
+    }
+}
+@media screen and (max-width: 991px) {
+    #logo {
+        left: calc(50% - 70px);
+        background-image: url(img/taste-cel.png);
+        width: 139px;
+        height: 102px;
+        background-repeat: no-repeat;
+        font-size: 0px;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    header {
+        height: 107px;
+    }
+
+    .divBotones button {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    #texto-banner h2 {
+        font-size: 4rem;
+    }
+    
+    #texto-banner p {
+        font-size: 1.7rem;
+    }
+
+    figure {   
+        margin: 105px 0 0rem;
+    }
+
+    #texto-banner {
+        top: 80px;
+        left: 50px;
+        width: 70%;
+    }
+
+    #banner {
+        margin-top: 106px;
+    }
+
+    #imgcarrito {
+        left: 20px;
+        top:30px;
+    }
+
+    #barra {
+        margin-top: 65px;
+        margin-right: 20px;
+    }
+
+    .filtros{
+        width: 30% !important;
+        margin: 20px 10px;
+    }
+
+    form > div {
+        width: 80%;
+        margin: 20px;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .borde-verde {
+        border: 3px solid rgb(36, 36, 36);
+        padding: 20px;
+        max-width: 21rem;
+    }
+
+    #restante{
+        width: 80%;
+    }
+
+    
+    #barra {
+        margin-top: 24px !important;
+    }
+
+    .checkout button {
+        width: 100%;
+        margin:10px 0;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+    .borde-verde {
+        border: 3px solid rgb(36, 36, 36);
+        padding: 20px;
+        width: 21rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #texto-banner h2 {
+        font-size: 3.3rem;
+    }
+    
+    #texto-banner p {
+        font-size: 1.4rem;
+    }
+
+    #texto-banner {
+        top: 40px;
+        left: 50px;
+    }
+
+    .filtros{
+        width: 100% !important;
+        margin: 20px 0;
+    }
+
+    .borde-verde {
+        border: 3px solid rgb(36, 36, 36);
+        padding: 20px;
+        max-width: 21rem;
+    }
+
+    .oferta img {
+        max-height: 510px;
+        margin-top: -80px !important;
+    }
+
+    #restante {
+        margin-top: -25px;
+        position: absolute;
+        z-index: 50000;
+        left: 60px;
+    }
+
+    #barra {
+        margin-top: 50px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .divBotones button {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    #logo {
+        left: calc(50% - 55px);
+        background-image: url(img/taste-cel_2.png);
+        width: 109px;
+        height: 80px;
+        background-repeat: no-repeat;
+        font-size: 0px;
+        position: absolute;
+        z-index: 1000;
+        margin-top: 10px;
+    }
+
+    #carrito div button {
+        margin-bottom: 10px;
+    }
+
+    #banner{
+        margin-top: 100px;
+        background-image: url(img/banner-cel.jpg);
+    }
+
+    #texto-banner h2 {
+        font-size: 3.2rem;
+    }
+    
+    #texto-banner p {
+        font-size: 1.3rem;
+    }
+
+    #texto-banner {
+        top: 71px;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    form button {
+        width: 80% !important;
+        margin: 20px;
+    }
+
+    form {
+        padding: 5px;
+    }
+
+    .borde-verde {
+        max-width: 24rem;
+    }
+
+    #restante{
+        width: 100%;
+        left: 0;
+    }
+
+    .ulDetalle img {
+        position: absolute;
+        right: 1px;
+        margin: 0 !important;
+        padding: 0 !important;
+        top: 25px;
+        width: 80px !important;
+    }
+
+    .ulDetalle li {
+        list-style: none;
+        text-align: left;
+        background-color: #212529;
+        color: white;
+        padding: 30px;
+        margin: 10px 10px;
+        position: relative;
+    }
+
+    .ulDetalle p {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 445px) {
+    #texto-banner h2 {
+        font-size: 2.5rem;
+    }
+    
+    #texto-banner p {
+        font-size: 1.2rem;
+    }
+
+    #texto-banner {
+        top: 18px;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #restante p{
+        font-size: 1.2rem;
+    }
+
+    .ulDetalle img {
+        top: 30px;
+    }
+
+}

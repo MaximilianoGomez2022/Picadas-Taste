@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picadas Taste</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <header class="fixed-top">
+
+        <h1 id="logo">Picadas taste</h1>
+
+        <div id="imgcarrito">
+          <img src="img/carrito.png" alt="" srcset="">
+          <p>0</p>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+          <div class="container-fluid">
+
+            <button class="navbar-toggler ms-auto" type="button"
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#barra" 
+                    aria-controls="barra" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="barra">
+              <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <section id="banner">
+      <div id="texto-banner" class="container">
+        <h2>Picadas Taste</h2>
+        <p>El sabor en tu paladar</p>
+        <p>Disfrutá los mejores fiambres para compartir en esos momentos especiales.</p>
+      </div>
+      <figure>                  
+        <picture >
+            <source media="(max-width: 576px)" srcset="img/banner-cel.jpg">
+            <source media="(max-width: 768px)" srcset="img/banner-tablet.jpg">
+            <img src="img/banner-1.jpg" class="d-block w-90" alt="banner-taste">
+        </picture>
+    </figure>
+    </section>
+
+      <section id="carrito"  class="container">
+
+          
+      </section>
+      <div id="mostrar"></div>
+      <script src="final.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/animaScroll.js"></script>
+      <footer class="text-center">
+        Picadas Taste - Maximiliano Gomez 2022
+      </footer>
+</body>
+</html>
