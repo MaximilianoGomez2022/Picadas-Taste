@@ -5,7 +5,7 @@ const d = document;
 let carrito = d.querySelector('#carrito'),
 	body = d.querySelector('header'),
 	carro = { productos: [], cantidad: [], total:0,},
-	mostrar = d.querySelector('#mostrar'),
+	//mostrar = d.querySelector('#mostrar'),
 	cont = 0,
 	circuloRojo = d.querySelector('#imgcarrito p');
 
@@ -283,9 +283,9 @@ for (let btn of btnsAgregar) {
 			carro.cantidad[indice]++;
 		}
 		carro.total = parseInt(carro.total) + precio;
-		mostrar.innerHTML = `	<p>Productos : ${carro.productos}</p>
-								<p>Cantidad : ${carro.cantidad}</p>
-								<p>Total : ${carro.total}</p>`;
+		//mostrar.innerHTML = `	<p>Productos : ${carro.productos}</p>
+								//<p>Cantidad : ${carro.cantidad}</p>
+								//<p>Total : ${carro.total}</p>`;
 		circuloRojo.innerHTML = cont;
 		localStorage.carro = JSON.stringify(carro);
 	}
@@ -307,9 +307,9 @@ for (let btnq of btnsQuitar) {
 				--cont;
 			};
 		}
-		mostrar.innerHTML = `	<p>Productos : ${carro.productos}</p>
-								<p>Cantidad : ${carro.cantidad}</p>
-								<p>Total : ${carro.total}</p>`;
+		//mostrar.innerHTML = `	<p>Productos : ${carro.productos}</p>
+								//<p>Cantidad : ${carro.cantidad}</p>
+								//<p>Total : ${carro.total}</p>`;
 		circuloRojo.innerHTML = cont;
 		localStorage.carro = JSON.stringify(carro)
 

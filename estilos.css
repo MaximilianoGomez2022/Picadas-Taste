@@ -331,8 +331,8 @@ form button {
 }
 
 #verCarrito {
-    width: 100% !important;
-    margin: 25px 0;
+    width: 30% !important;
+    margin: 70px 0;
 }
 
 .pError {
@@ -488,6 +488,11 @@ form button {
 
     #barra {
         margin-top: 50px !important;
+    }
+
+    #verCarrito {
+        width: 50% !important;
+        margin: 70px auto;
     }
 
 
